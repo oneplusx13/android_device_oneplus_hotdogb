@@ -1,5 +1,5 @@
 # Device Tree for OnePlus 7T Pro aka Hotdog for TWRP (this should be unified with 7T, but I cannot test since I do not own that device)
-## Disclaimer
+## Disclaimer - Unofficial TWRP!
 These are personal test builds of mine. In no way do I hold responsibility if it/you messes up your device.
 Proceed at your own risk.
 
