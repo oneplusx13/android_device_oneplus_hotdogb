@@ -58,14 +58,13 @@ fastboot flash recovery recovery.img
 - [X] backup/restore to/from external (USB-OTG) storage
 - [X] update.zip sideload
 - [X] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
+- [ ] format data (untested)
 
 #### Not working - OxygenOS specific
-- [ ] decrypt /data (OxygenOS, hardware problem or something preventing mounting data)
+- [ ] decrypt /data (OxygenOS, because encryption is implemented differently)
 - [ ] Backup to internal/microSD
 - [ ] Restore from internal/microSD
-- [ ] partition SD card
-- [ ] format data (untested)
-- [ ] MTP export (because OOS can't decrypt data)
+- [ ] MTP export
 
 ##### Credits
 - CaptainThrowback for original trees.
