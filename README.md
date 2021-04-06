@@ -14,10 +14,19 @@ Sync twrp-10.0 manifest:
 repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 ```
 
-Add this to .repo/manifests/twrp-extras.xml
+Create a manifest is .repo/local_manifests (name doesn't matter) and this repo in it.
+In revision, specify what branch you want to clone. 
 
 ```xml
-<project name="systemad/android_device_oneplus_hotdog" path="device/oneplus/hotdog" remote="github" revision="android-10" />
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <project path="device/oneplus/hotdog"
+           name="systemad/android_device_oneplus_hotdog"
+           remote="github"
+           revision="a11k" />
+</manifest>
+
 ```
 
 Sync the sources with
