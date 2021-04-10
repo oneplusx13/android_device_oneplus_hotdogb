@@ -20,11 +20,15 @@ In revision, specify what branch you want to clone.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/oneplus/hotdog"
-           name="systemad/android_device_oneplus_hotdog"
-           remote="github"
-           revision="a11k" />
+		<remote name="github" 
+		fetch="https://github.com/" />       
+
+		<project path="device/oneplus/hotdog"
+			name="systemad/android_device_oneplus_hotdog"
+			remote="github"
+			revision="a11k" />
 </manifest>
 
 ```
