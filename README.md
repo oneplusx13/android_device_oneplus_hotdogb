@@ -19,8 +19,6 @@ In revision, specify what branch you want to clone.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 		<remote name="github" 
 		fetch="https://github.com/" />       
