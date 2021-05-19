@@ -4,9 +4,7 @@ These are personal test builds of mine. In no way do I hold responsibility if it
 Proceed at your own risk.
 
 ### Note
-2021-04-27:
-Initial build which boots on OOS11 for 7T / Pro.
-Decryption on OOS11 does not work. Might work on custom that uses OOS11 blobs.
+Decryption is working for custom ROMs with OOS blobs, both for ROMs with sdcardfs and fbev2 (see fbev2 branch).
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo
