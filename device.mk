@@ -77,3 +77,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(LOCAL_PATH)/security/oneplus \
     $(LOCAL_PATH)/security/pixelexperience \
+
+PRODUCT_COPY_FILES += \
+    device/oneplus/hotdog/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
+    device/oneplus/hotdog/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
