@@ -14,7 +14,8 @@ Setup repo tool from here https://source.android.com/setup/develop#installing-re
 Sync aosp_r29 manifest:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r29
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+
 ```
 
 Make a directory named local_manifest under .repo, and create a new manifest file, for example hotdog.xml
@@ -32,7 +33,6 @@ and then paste the following
 	revision="android-11" />
 </manifest>
 ```
-Use https://del.dog/a11-twrp-extras.txt is same directory as well. You might need to pick few patches from gerrit.twrp.me to get some stuff working.
 
 Sync the sources with
 
@@ -65,18 +65,16 @@ fastboot flash recovery recovery.img
 - [X] ADB (+ sideload)
 - [X] all important partitions listed in mount/backup lists
 - [X] MTP export
-- [X] decrypt /data - Only working for Custom A10 and A11 ROMs using OOS10 blobs
-- [X] Backup to internal/microSD - Not working
-- [X] Restore from internal/microSD - Not working
+- [X] decrypt /data - OOS10, OOS11, and custom A10+A11 ROMs. FBEv2 is supported as well, check fbev2 branch.
+- [X] Backup to internal/microSD
+- [X] Restore from internal/microSD
 - [X] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [X] backup/restore to/from external (USB-OTG) storage
 - [X] update.zip sideload
 - [X] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
 
-#### Not working - OxygenOS specific
-- Decryption and probably everything that requires it
 
 ##### Credits
 - CaptainThrowback for original trees.
 - mauronofrio for original trees.
-- TWRP team and everyone involved for their amazing work.
+- TWRP Team.
