@@ -1,7 +1,7 @@
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-LOCAL_PATH := device/oneplus/hotdog
+LOCAL_PATH := device/oneplus/hotdogb
 
 # define hardware platform
 PRODUCT_PLATFORM := msmnile
