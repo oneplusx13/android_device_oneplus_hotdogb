@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := hotdog
+PRODUCT_RELEASE_NAME := hotdogb
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
@@ -24,7 +24,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := oneplus
-PRODUCT_MODEL := HD1910
+PRODUCT_MODEL := HD1905
 PRODUCT_MANUFACTURER := oneplus
 
 # Inherit from hardware-specific part of the product configuration
